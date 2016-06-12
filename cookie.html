@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cookie使用事例</title>
+	<script>
+		window.onload =  function () {
+			var submit = document.getElementById("submit");
+			var login = document.getElementById("submit1");
+
+			submit.onclick = function(){
+				setCookie();
+			}
+
+			login.onclick = function(){
+				var username = document.getElementById("username1"),
+					password = document.getElementById("password1");
+				var userVal  = username.value,
+					passVal = password.value;
+
+				var data = document.cookie;
+				
+				var m = data.split(";");
+				var yonghu = [];
+
+				for (var i = 0; i <= m.length-1; i++) {
+					var a = m[i].split("=")[1];
+					yonghu.push(a);
+				}
+				
+				if ((userVal==yonghu[0]) && (passVal==yonghu[1])) {
+					alert("您输入正确!!");
+				}else if(userVal!==yonghu[0]) {
+					alert("您用户名输入错误!!");
+				}else if(passVal!==yonghu[1]){
+					alert("您密码输入错误!!");
+				}
+				
+			};
+		};
+
+		var setCookie = function(){
+			var username = document.getElementById("username"),
+			password = document.getElementById("password");
+			var userVal  = username.value,
+				passVal = password.value;
+			if(userVal&&passVal){
+				var date = new Date();
+				var today = date.toUTCString(date.setDate(date.getDate()+30));	
+				document.cookie = 'username='+userVal+';expires='+today+'';
+				document.cookie = 'password='+passVal+';expires='+today+'';
+				alert("注册成功");
+			}else{
+				alert("用户名和密码不能为空！！");
+			}
+		};
+
+	</script>
+
+	<!--[if lt IE 8]>
+
+	<script>
+		function tip(){
+		if (document.cookie.length>0){
+				alert(document.cookie)
+			}else {
+				alert("您的浏览器版本过低，请使用ie8以上版本访问！！");
+				document.cookie = "tip=1;top=2";
+			}
+		}
+		tip();
+	</script>
+
+	<![endif]-->
+</head>
+<body>
+	<form action="#">
+		username:<input type="text" id="username">
+		password:<input type="text" id="password">
+		<input type="submit" id="submit" value="注册">
+		<br>
+		<br><br>
+		username:<input type="text" id="username1">
+		password:<input type="text" id="password1">
+		<input type="submit" id="submit1" value="登录">
+	</form>
+</body>
+</html>
