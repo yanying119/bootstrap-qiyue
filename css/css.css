@@ -90,3 +90,7 @@
 	color:#fff;
 	margin-top: 40px;
 }
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+	color:#ccc;
+}
