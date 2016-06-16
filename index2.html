@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>鼠标滚动翻页</title>
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/workmanship.js"></script>
+	<script>
+		$(function(){
+			var indexAnimate = {
+				n:0,
+				init:function(){
+					this.bind();
+					this.go();
+				},
+				down:function(a){
+					var _this=a,
+						isAnimate = $(".box").is(":animated"),
+						m = $(".box").size()-1;
+
+					if (!isAnimate){
+						_this.n++;
+						if (_this.n>=m){_this.n=m}
+						a.go();
+						
+					}
+				},
+				up:function(a){
+					var _this=a,
+						isAnimate = $(".box").is(":animated");
+					
+					if (!isAnimate){
+						_this.n--;
+						if (_this.n<=0){_this.n=0};
+						a.go();
+					}
+					
+				},
+				go:function(){
+					var b = $("body").height();
+					$(".box").eq(0).stop().animate({marginTop:-(this.n)*b},800);
+					$(".menu_btn li").css("background","#fff").eq(this.n).css("background","#000");	
+				},
+				bind:function(){
+					var _this = this;
+					wheel(_this,this.up,this.down);
+
+					$(".menu_btn").find("li").click(function(){
+						var index = $(this).index();
+						_this.n = index;
+						_this.go();
+					});
+				}	
+			}
+			var width  = $("body").width();
+			if(width>920){indexAnimate.init();}
+			
+			$(window).resize(function(){
+				var width  = $("body").width();
+				if(width>920){indexAnimate.init();}else{removeWheel();$(".box").eq(0).css('marginTop',0)};
+			});
+			
+		});
+
+	</script>
+	<style>
+		html,body,.box {
+			width:100%;
+			height:100%;
+			padding:0;
+			margin:0;
+		}
+		.box {
+			box-sizing: border-box;
+			padding:15%;
+			font-size: 20px;
+			line-height: 40px;
+			text-align: center;
+			color:#fff;
+		}
+		.bg1 {
+			background: #43D2FB
+		}
+		.bg2 {
+			background: #EA911E
+		}
+		.bg3 {
+			background: #FF00C6
+		}
+		.bg4 {
+			background: #C5FF00
+		}
+		.bg5 {
+			background: #22F74D
+		}
+		.menu_btn {
+			position: absolute;right: 30px;top:50%;
+			margin-top:-60px;
+			display: none;
+		}
+		.menu_btn li {
+			list-style: none;
+			width: 14px;
+			height: 14px;
+			border:2px solid #000;
+			background: #fff;
+			margin-bottom: 10px;
+			border-radius:14px;
+		}
+		@media (min-width: 920px){
+			html,body {
+				overflow-y: hidden;
+			}
+			.menu_btn {
+				display: block;
+			}
+			.box {
+				font-size: 100px;
+				line-height: 200px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box bg1">我也不知道为什么，就想做个网站</div>
+	<div class="box bg2">管他为什么、就做出来了</div>
+	<div class="box bg3">你看还是可以的</div>
+	<div class="box bg4">哈哈</div>
+	<div class="box bg5">没了別翻了</div>
+	<ul class="menu_btn">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</body>
+</html>
