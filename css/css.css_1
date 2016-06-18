@@ -94,14 +94,3 @@
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
 	color:#ccc;
 }
-
-
-/*改版*/ 
-.jiazuming img {
-	width: 100%;
-	height: auto;
-}
-
-.pa40 {
-	padding:40px 0;
-}

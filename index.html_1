@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Devil＊．契约</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-ico">
+    <link rel="stylesheet" href="./css/css.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="./js/html5shiv.js"></script>
+      <script src="./js/respond.js"></script>
+    <![endif]-->
+    <script src="./js/<js class="js"></js>"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-list" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">Devil＊．契约</a>
+            </div>
+            <div class="collapse navbar-collapse" id="nav-list">
+                <ul class="nav navbar-nav">
+                   <li><a href="#chengyuan">成员</a></li>
+                   <li><a href="#xinwen">新闻</a></li>
+                   <li><a href="#jianjie">公告</a></li>
+                </ul> 
+                <hr>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#lianxi">联系我们</a></li>
+                    <li><a href="#lianxi">加入我们</a></li>
+                    <li><a href="#lianxi">赞助我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="width_100 bg">
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="jianjie">
+                    <p class="font30">Devil＊．契约</p>
+                    <p>一个划时代的家族</p>
+                    <p>一个团结有爱的家族</p>
+                    <p>一个亦纯亦污的家族</p>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="carousel pa40 slide" data-ride="carousel" id="carousel-example-generic">
+                   <ul class="carousel-inner" role="listbox" style="margin-bottom:0;padding-left:0">
+                       <li class="item active"><img src="./img/tui.jpg" alt="骽"></li>
+                       <li class="item"><img src="./img/mi.jpg" alt="芈"></li>
+                       <li class="item"><img src="./img/nuo.jpg" alt="诺"></li>
+                       <li class="item"><img src="./img/wan.jpg" alt="婉"></li>
+                       <li class="item"><img src="./img/wan1.jpg" alt="婉弓"></li>
+                       <li class="item"><img src="./img/yan.jpg" alt="嫣"></li>
+                       <li class="item"><img src="./img/xi.jpg" alt="兮"></li>
+                       <li class="item"><img src="./img/kai.jpg" alt="凯"></li>
+                       <li class="item"><img src="./img/yi.jpg" alt="颐"></li>
+                       <li class="item"><img src="./img/yue.jpg" alt="玥"></li>
+                       <li class="item"><img src="./img/yao.jpg" alt="妖"></li>
+                       <li class="item"><img src="./img/feifan.jpg" alt="非凡"></li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+            
+        </div>
+    </div>
+    <div class="container mt40">
+        
+        <div class="row mt40">
+            <div class="col-sm-5">
+                <img class="width_100" src="./img/xuanwu.jpg" alt="炫舞时代">
+            </div>
+            <div class="col-sm-7">
+                <div class="pa40">
+                    <h3 class="texCenter">炫舞时代游戏简介<br><span class="small">由腾讯公司代理的一款舞蹈类游戏</span></h3>
+                    <p class="tin2em">《炫舞时代》由北京永航科技有限公司开发，腾讯公司运营的跨端全3D音乐舞蹈类网络游戏，于2014年8月6日舞战公测，2014年4月17日开放测试期间将原名《QQ炫舞2》改为《炫舞时代》。</p>
+                    <p class="tin2em">《炫舞时代》是一个凝聚友情和爱情的地方，在这里有欢乐、有挑战、有扶植、更有一群善良的小伙伴，他们为了家族的荣誉在努力奋斗着。《炫舞时代》冒险岛推出了全新家族对战系统，发出家族集合令即可召集小伙伴一起拿起武器，为家族的荣誉而战。</p>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="container mt40">
+        <div class="row">
+            <div class="col-sm-4">
+                <h4 class="texCenter fontbold pa20">家族简介<a name="jianjie"></a></h4>
+                <div class="texCenter">
+                    <p>Devil＊．契约家族成立于，2014年01月03日</p>
+                    <p>是游戏炫舞时代12人家族、目前所拥有的人数为12人。</p>
+                    <p>族战全区排名90左右</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h4 class="texCenter fontbold pa20">家族新闻<a name="xinwen"></a></h4>
+                <div class="texCenter">
+                    <p>Devil＊．契约家族成立于，2014年01月03日</p>
+                    <p>是游戏炫舞时代12人家族、目前所拥有的人数为12人。</p>
+                    <p>族战全区排名90左右</p>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <h4 class="texCenter fontbold pa20">家族公告</h4>
+                <div class="texCenter">
+                    <p>Devil＊．契约家族成立于，2014年01月03日</p>
+                    <p>是游戏炫舞时代12人家族、目前所拥有的人数为12人。</p>
+                    <p>族战全区排名90左右</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="width_100 texCenter comeon">
+        <a mane="lianxi"></a>
+        <h3>加入我们吧</h3>
+        <p>qq群：325313175</p>
+    </div>
+    <div class="container mt40">
+        <h3><a name="chengyuan">成员介绍</a></h3>
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="active" role="presentation"><a aria-controls="settings" role="tab" data-toggle="tab" href="#tuo">骽</a></li>
+            <li role="presentation"><a aria-controls="settings" role="tab" data-toggle="tab" href="#nuo">诺</a></li>
+            <li role="presentation"><a aria-controls="settings" role="tab" data-toggle="tab" href="#mi">芈</a></li>
+            <li role="presentation"><a aria-controls="settings" role="tab" data-toggle="tab" href="#xi">兮</a></li>
+            <li role="presentation"><a aria-controls="settings" role="tab" data-toggle="tab" href="#hua">花竞落</a></li>
+            <li role="presentation"><a aria-controls="settings" role="tab" data-toggle="tab" href="#kai">凯</a></li>
+            <li role="presentation"><a aria-controls="settings" role="tab" data-toggle="tab" href="#mei">寐</a></li>
+            <li role="presentation"><a aria-controls="settings" role="tab" data-toggle="tab" href="#wan">婉</a></li>
+            <li role="presentation"><a aria-controls="settings" role="tab" data-toggle="tab" href="#wan1">娇诗韵</a></li>
+            <li role="presentation"><a aria-controls="settings" role="tab" data-toggle="tab" href="#yan">嫣</a></li>
+            <li role="presentation"><a aria-controls="settings" role="tab" data-toggle="tab" href="#an">安定片</a></li>
+            <li role="presentation"><a aria-controls="settings" role="tab" data-toggle="tab" href="#yao">妖</a></li>
+        </ul>
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="tuo">族长：骽</div>
+            <div role="tabpanel" class="tab-pane" id="nuo">族员：诺</div>
+            <div role="tabpanel" class="tab-pane" id="mi">族员：芈</div>
+            <div role="tabpanel" class="tab-pane" id="xi">族员：兮</div>
+            <div role="tabpanel" class="tab-pane" id="hua">族员：花竞落</div>
+            <div role="tabpanel" class="tab-pane" id="kai">族员：凯</div>
+            <div role="tabpanel" class="tab-pane" id="mei">族员：寐</div>
+            <div role="tabpanel" class="tab-pane" id="wan">族员：婉</div>
+            <div role="tabpanel" class="tab-pane" id="wan1">族员：娇诗韵</div>
+            <div role="tabpanel" class="tab-pane" id="yan">族员：嫣</div>
+            <div role="tabpanel" class="tab-pane" id="an">族员：安定片</div>
+            <div role="tabpanel" class="tab-pane" id="yao">族员：妖</div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>最终解释权归诺所有</p>
+    </footer>
+</body>
+</html>
