@@ -105,7 +105,14 @@
 	hr {
 		display: none;
 	}
+	
+}	
+
+@media (max-width:750px) {
+	
 	.jianjie p {
 		font-size: 18px;
 	}
-}	
+}
+
+
