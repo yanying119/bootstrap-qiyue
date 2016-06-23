@@ -1,3 +1,8 @@
+body {
+	font-size:16px;
+	background: #110d0d;
+	color:#fff;
+}
 .banner {
 	padding:0;
 	background: #342F43;
@@ -27,12 +32,40 @@
 .h_100 {
 	height: 100%;
 }
-
+.h_50 {
+	height:50px;
+	background: #342F43;
+	line-height: 50px;
+	margin-top: 60px;
+}
 .xuanyan {
 	line-height: 100px;
 	font-size: 45px;
 	font-family: '幼圆';
 	color:#fff;
+}
+.text_center {
+	text-align:center;
+}
+.padding40 {
+	padding:40px 0;
+}
+.paddingTop20 {
+	padding-top:20px;
+}
+.col-sm-5 img {
+	width: 100%;
+}
+.paddingTop60 {
+	padding-top: 60px;
+}
+.col-sm-7 p {
+	font-size:20px;
+	line-height: 35px;
+}
+.w_80 {
+	width: 75%;
+	margin:0 auto;
 }
 
 @media (max-width:750px) {
