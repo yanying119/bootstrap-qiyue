@@ -1,6 +1,8 @@
-$(function(){
-	$('#myTabs a').click(function (e) {
-		e.preventDefault()
-		$(this).tab('show')
-	})
+$(function(){	
+	$(".col-sm-4").each(function(){
+		var height = $(this).find(".img").outerHeight();
+		console.log(height);
+		$(this).css("height",height);
+		$(this).find(".jianjie").css("height",height);
+	});
 });
