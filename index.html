@@ -190,5 +190,14 @@
     <div class="container-fluid text_center h_50">
         最终解释权归诺所有
     </div>
+    <script>
+    	$(function(){	
+			$(".col-sm-4").each(function(){
+				var height = $(this).find("img").outerHeight();
+				console.log(height);
+				$(this).css("height",height);
+			});
+		});
+    </script>
 </body>
 </html>
