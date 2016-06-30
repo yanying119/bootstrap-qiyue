@@ -192,10 +192,11 @@
     </div>
     <script>
     	$(function(){	
-			$(".col-sm-4").each(function(){
-				var height = $(this).find("img").outerHeight();
-				console.log(height);
-				$(this).css("height",height);
+			$(".img").find("img").each(function(){
+				$(this).load(function(){
+					var height = $(this).outerHeight();
+						$(this).parent().parent().css("height",height);
+				})
 			});
 		});
     </script>
